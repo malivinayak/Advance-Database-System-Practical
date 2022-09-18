@@ -36,8 +36,3 @@ Q. How to drop a created user ?
 
 Q. How to stop and start Data base services ?
 > Go to services and find the oracleserviceXE and the start or stop
-
-<br> 
-
-## Reference: 
-Youtube Video [Click Here](https://www.youtube.com/watch?v=WMWGWP9Jey0)
