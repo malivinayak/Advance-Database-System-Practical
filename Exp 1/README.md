@@ -29,28 +29,28 @@
 
 1. Author Table
 
-insert into author values('A0001', new Name('Vinayak','Mali'),'9985698877'); <br> 
-insert into author values('A0002', new Name('Aishwarya','Patil'),'8569889658'); <br>
-insert into author values('A0003', new Name('Abhishek','Shinde'),'8874896521'); <br>
-insert into author values('A0004', new Name('Ram','Shinge'),'9966587423'); <br>
-insert into author values('A0005', new Name('Pratham','Patil'),'8855654895'); <br>
-insert into author values('A0006', new Name('Aakansha','Shinde'),'8855654895'); <br>
-insert into author values('A0007', new Name('Elmasri', 'Ramez'),'7788564985'); <br>
-insert into author values('A0008', new Name('Navathe', 'Shamkant'),'8989547866'); <br>
+`insert into author values('A0001', new Name('Vinayak','Mali'),'9985698877');` <br> 
+`insert into author values('A0002', new Name('Aishwarya','Patil'),'8569889658');` <br>
+`insert into author values('A0003', new Name('Abhishek','Shinde'),'8874896521');` <br>
+`insert into author values('A0004', new Name('Ram','Shinge'),'9966587423');` <br>
+`insert into author values('A0005', new Name('Pratham','Patil'),'8855654895');` <br>
+`insert into author values('A0006', new Name('Aakansha','Shinde'),'8855654895');` <br>
+`insert into author values('A0007', new Name('Elmasri', 'Ramez'),'7788564985');` <br>
+`insert into author values('A0008', new Name('Navathe', 'Shamkant'),'8989547866');` <br>
 
 ## Quires
 
 1. How to access fname from Author Table of type name?
-> `select a.author_name.fname from author a;`
+`select a.author_name.fname from author a;`
 
 2. Print all columns including fname and lname from author table
-> `select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lname) as Last_Name, a.phone_no as Phone_Number from author a;`
+`select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lname) as Last_Name, a.phone_no as Phone_Number from author a;`
 
 3. Print all authors whose sirname is 'Patil'
-> `select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lname) as Last_Name, a.phone_no as Phone_Number from author a where a.author_name.lname = 'Patil';`
+`select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lname) as Last_Name, a.phone_no as Phone_Number from author a where a.author_name.lname = 'Patil';`
 
 <hr>
 
 2. Book Table
 
-insert into book values(0133970779,'Fundamentals of Database Systems',AUTHOR_ID('A0007','A0008'),'Education',publisher('P0001','Pearson Education','India'),KEYWORDS('Advance Database','ADS','Pearson','Oracle'),593.00);
+`insert into book values(0133970779,'Fundamentals of Database Systems',AUTHOR_ID('A0007','A0008'),'Education',publisher('P0001','Pearson Education','India'),KEYWORDS('Advance Database','ADS','Pearson','Oracle'),593.00);`
