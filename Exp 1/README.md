@@ -38,3 +38,15 @@ insert into author values('A0006', new Name('Aakansha','Shinde'),'8855654895');
 insert into author values('A0007', new Name('Elmasri', 'Ramez'),'7788564985');
 insert into author values('A0008', new Name('Navathe', 'Shamkant'),'8989547866');
 
+
+## Quires
+
+1. How to access fname from Author Table of type name?
+> `select a.author_name.fname from author a;`
+
+2. Print all columns including fname and lname from author table
+> `select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lname) as Last_Name, a.phone_no as Phone_Number from author a;`
+
+3. Print all authors whose sirname is 'Patil'
+> `select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lname) as Last_Name, a.phone_no as Phone_Number from author a where a.author_name.lname = 'Patil';`
+
