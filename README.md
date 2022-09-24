@@ -8,6 +8,7 @@
 * EM Express URL: `https://localhost:5500/em`
 
 Q. How to start the lsnrctl (Listener Control) ? <br>
+> Start the server from services if not already started
 >  lsnrctl start <br>
 >  lsnrctl status <br>
 
