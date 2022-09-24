@@ -29,14 +29,14 @@
 
 1. Author Table
 
-insert into author values('A0001', new Name('Vinayak','Mali'),'9985698877');
-insert into author values('A0002', new Name('Aishwarya','Patil'),'8569889658');
-insert into author values('A0003', new Name('Abhishek','Shinde'),'8874896521');
-insert into author values('A0004', new Name('Ram','Shinge'),'9966587423');
-insert into author values('A0005', new Name('Pratham','Patil'),'8855654895');
-insert into author values('A0006', new Name('Aakansha','Shinde'),'8855654895');
-insert into author values('A0007', new Name('Elmasri', 'Ramez'),'7788564985');
-insert into author values('A0008', new Name('Navathe', 'Shamkant'),'8989547866');
+insert into author values('A0001', new Name('Vinayak','Mali'),'9985698877'); <br> 
+insert into author values('A0002', new Name('Aishwarya','Patil'),'8569889658'); <br>
+insert into author values('A0003', new Name('Abhishek','Shinde'),'8874896521'); <br>
+insert into author values('A0004', new Name('Ram','Shinge'),'9966587423'); <br>
+insert into author values('A0005', new Name('Pratham','Patil'),'8855654895'); <br>
+insert into author values('A0006', new Name('Aakansha','Shinde'),'8855654895'); <br>
+insert into author values('A0007', new Name('Elmasri', 'Ramez'),'7788564985'); <br>
+insert into author values('A0008', new Name('Navathe', 'Shamkant'),'8989547866'); <br>
 
 ## Quires
 
