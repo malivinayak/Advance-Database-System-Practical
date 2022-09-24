@@ -53,4 +53,4 @@
 
 2. Book Table
 
-`insert into book values(0133970779,'Fundamentals of Database Systems',AUTHOR_ID('A0007','A0008'),'Education',publisher('P0001','Pearson Education','India'),KEYWORDS('Advance Database','ADS','Pearson','Oracle'),593.00);`
+`insert into book values(0133970779, 'Fundamentals of Database Systems' ,AUTHOR_ID('A0007','A0008'),'Education', publisher('P0001','Pearson Education','India'), KEYWORDS('Advance Database','ADS','Pearson','Oracle'), 593.00);`
