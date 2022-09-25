@@ -73,5 +73,6 @@ select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lnam
 2. Book Table
 
 ```
-insert into book values(0133970779, 'Fundamentals of Database Systems' ,AUTHOR_ID('A0007','A0008'),'Education', publisher('P0001','Pearson Education','India'), KEYWORDS('Advance Database','ADS','Pearson','Oracle'), 593.00);
+insert into book values(0133970779, 'Fundamentals of Database Systems' ,AUTHOR_ID('A0001','A0002'),'Education', publisher('P0001','Pearson Education','India'), KEYWORDS('Advance Database','ADS','Pearson','Oracle'), 593.00);
+insert into book values(978000225586, 'The God of Small Things' ,AUTHOR_ID('A0003'),'Literary Fiction', publisher('P0002','IndiaInk, India','India'), KEYWORDS('Love Laws','ADS','Booker Prize','childhood','Society'), 800.00);
 ```
