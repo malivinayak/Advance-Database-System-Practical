@@ -76,3 +76,51 @@ select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lnam
 insert into book values(0133970779, 'Fundamentals of Database Systems' ,AUTHOR_ID('A0001','A0002'),'Education', publisher('P0001','Pearson Education','India'), KEYWORDS('Advance Database','ADS','Pearson','Oracle'), 593.00);
 insert into book values(978000225586, 'The God of Small Things' ,AUTHOR_ID('A0003'),'Literary Fiction', publisher('P0002','IndiaInk, India','India'), KEYWORDS('Love Laws','ADS','Booker Prize','childhood','Society'), 800.00);
 ```
+
+## Quires
+
+1. List all titles in book and include ISBN number, Author First and last name of first author of book.
+```
+create or replace function ext(p_varray_in author_id)
+    return varchar
+    is
+    v_ext varchar(20);
+    begin
+    v_ext := p_varray_in(1);
+    return v_ext;
+    end;
+/
+select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname as First_Name, a.AUTHOR_NAME.lname as Last_Name 
+    from author a, book b 
+    where a.id in (select ext(b.b_author_id) from book b);
+```
+
+2. List all titles in book and include ISBN number, Author First and last name
+```
+select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname as First_Name, a.AUTHOR_NAME.lname as Last_Name 
+    from author a, book b 
+    where a.id in (
+        SELECT COLUMN_VALUE b_author_id  
+        FROM TABLE (b_author_id)
+    );
+```
+3. List all titles in book and include ISBN number and Author First & last name **as combined Full_Name**
+```
+select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , CONCAT(CONCAT(a.AUTHOR_NAME.fname, ' '),a.AUTHOR_NAME.lname) as Full_Name 
+    from author a, book b 
+    where a.id in (
+        SELECT COLUMN_VALUE b_author_id  
+        FROM TABLE (b_author_id)
+    );
+```
+> Note : CONCAT function can only take 2 Parameters or Arguments, So, for three Parameters or Arguments i.e. Str1 , space, str 2 we used 2 concat 
+
+4. List all titles in book and include ISBN number and Author First & last name as combined Full_Name **Using Name Type**
+```
+select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , Name(a.AUTHOR_NAME.fname, a.AUTHOR_NAME.lname) as Full_Name 
+    from author a, book b 
+    where a.id in (
+        SELECT COLUMN_VALUE b_author_id  
+        FROM TABLE (b_author_id)
+    );
+```
