@@ -8,7 +8,7 @@
 * EM Express URL: `https://localhost:5500/em`
 
 Q. How to start the lsnrctl (Listener Control) ? <br>
-> Start the server from services if not already started
+>  Start the server from services if not already started <br>
 >  lsnrctl start <br>
 >  lsnrctl status <br>
 
@@ -17,7 +17,10 @@ Q. How to start the lsnrctl (Listener Control) ? <br>
 * connect sys/$PASSWORD@localhost:1521/XEPDB1 as sysdba;
 
 Q. How to create new User/Database:
-> ```create user $USERNAME identified by $USERPASSWORD default tablespace users quota unlimited on users;``` <br>
+> 
+```
+create user $USERNAME identified by $USERPASSWORD default tablespace users quota unlimited on users;
+```
 >
 > **Example** - create user demouser identified by Pass123 default tablespace users quota unlimited on users;
 
