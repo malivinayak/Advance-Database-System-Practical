@@ -153,3 +153,11 @@ insert into book_sale values('S0003','C0002',0133970779);
 insert into book_sale values('S0004','C0013',0133970779);
 insert into book_sale values('S0005','C0004',978000225586);
 ```
+### Queries
+
+1. List All the Customer who have purchased book with 'Pearson Education'
+```
+select CONCAT(CONCAT(c.Customer_NAME.fname, ' '),c.Customer_NAME.lname) as Customer_Name, c.phone as Phone_Number, b.title
+    from book_sale BS, customer c, book b
+    where b.book_publisher.PUB_NAME in 'Pearson Education' and BS.BS_customer_id = c.customer_id and BS.BS_ISBN = B.ISBN;
+```
