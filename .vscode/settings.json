@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["multiset"]
+  "cSpell.words": [
+    "CONCAT",
+    "fname",
+    "lname",
+    "multiset",
+    "varchar",
+    "varray"
+  ]
 }
