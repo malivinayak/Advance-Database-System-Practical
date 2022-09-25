@@ -44,14 +44,14 @@ create table Book_Sale( sale_id varchar(10) PRIMARY KEY, BS_customer_id varchar(
 
 ## Data Insertion
 
-1. Author Table
+### 1. Author Table
 ```
 insert into author values('A0001', new Name('Elmasri', 'Ramez'),'7788564985');
 insert into author values('A0002', new Name('Navathe', 'Shamkant'),'8989547866');
 insert into author values('A0003', new Name('Arundhati', 'Roy'),'8959686859');
 ```
 
-## Quires
+### Quires
 
 1. How to access fname from Author Table of type name?
 ```
@@ -70,14 +70,14 @@ select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lnam
 
 <hr>
 
-2. Book Table
+### 2. Book Table
 
 ```
 insert into book values(0133970779, 'Fundamentals of Database Systems' ,AUTHOR_ID('A0001','A0002'),'Education', publisher('P0001','Pearson Education','India'), KEYWORDS('Advance Database','ADS','Pearson','Oracle'), 593.00);
 insert into book values(978000225586, 'The God of Small Things' ,AUTHOR_ID('A0003'),'Literary Fiction', publisher('P0002','IndiaInk, India','India'), KEYWORDS('Love Laws','ADS','Booker Prize','childhood','Society'), 800.00);
 ```
 
-## Quires
+### Quires
 
 1. List all titles in book and include ISBN number, Author First and last name of first author of book.
 ```
