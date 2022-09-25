@@ -138,3 +138,18 @@ insert into Customer values('C0004',new name('Pratham','Patil'),'7848561523');
 insert into Customer values('C0013',new Name('Vinayak','Mali'),'8080121357');
 insert into Customer values('C0012',new Name('Aishwarya','Patil'),'8080131275');
 ```
+
+
+
+
+<hr><hr>
+
+## 4. Book Sale
+
+```
+insert into book_sale values('S0001','C0013',978000225586);
+insert into book_sale values('S0002','C0012',978000225586);
+insert into book_sale values('S0003','C0002',0133970779);
+insert into book_sale values('S0004','C0013',0133970779);
+insert into book_sale values('S0005','C0004',978000225586);
+```
