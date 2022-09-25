@@ -124,3 +124,17 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , Name(a.AUTHOR_NAME.
         FROM TABLE (b_author_id)
     );
 ```
+
+
+<hr><hr>
+
+## 3. Customer Table
+
+```
+insert into Customer values('C0001',new name('Abhishek','Shinde'),'8656487895');
+insert into Customer values('C0002',new name('Ram','Shinge'),'7848568925');
+insert into Customer values('C0003',new name('Aakansha','Shinde'),'9090231546');
+insert into Customer values('C0004',new name('Pratham','Patil'),'7848561523');
+insert into Customer values('C0013',new Name('Vinayak','Mali'),'8080121357');
+insert into Customer values('C0012',new Name('Aishwarya','Patil'),'8080131275');
+```
