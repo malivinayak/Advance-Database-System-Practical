@@ -163,7 +163,7 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , Name(a.AUTHOR_NAME.
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="320em" src="https://user-images.githubusercontent.com/66154908/192425565-4f3c6160-4ddf-4afb-8aa4-c1d7a9e7ab4c.png" />
+  <img height="350em" src="https://user-images.githubusercontent.com/66154908/192425565-4f3c6160-4ddf-4afb-8aa4-c1d7a9e7ab4c.png" />
 </details>
 
 <hr><hr>
@@ -214,7 +214,7 @@ select CONCAT(CONCAT(c.Customer_NAME.fname, ' '),c.Customer_NAME.lname) as Custo
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="280em" src="https://user-images.githubusercontent.com/66154908/192425725-c2675e85-e4ec-4fc3-850c-07bf880c1f2d.png" />
+  <img height="310em" src="https://user-images.githubusercontent.com/66154908/192425725-c2675e85-e4ec-4fc3-850c-07bf880c1f2d.png" />
 </details>
 
 3. List customers (as combined from customer.fname and customer.lname) who have purchased books published in the UK or the US, as well as the title of the book they purchased and the name of its publisher and order by last name of customer.
@@ -246,7 +246,7 @@ select DISTINCT b.category as Category_Name, count(b.category) as Book_Count
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="290em" src="https://user-images.githubusercontent.com/66154908/192425915-d6824cc8-d14a-4e6f-8195-aa157f9d2afe.png" />
+  <img height="320em" src="https://user-images.githubusercontent.com/66154908/192425915-d6824cc8-d14a-4e6f-8195-aa157f9d2afe.png" />
 </details>
 
 
