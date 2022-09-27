@@ -107,7 +107,7 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname 
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="580em" src="https://user-images.githubusercontent.com/66154908/192424630-41df77c0-e40a-4d58-9a67-fa528e64cf59.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192424630-41df77c0-e40a-4d58-9a67-fa528e64cf59.png" />
 </details>
 
 2. List all titles in book and include ISBN number, Author First and last name
@@ -124,7 +124,7 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname 
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="280em" src="https://user-images.githubusercontent.com/66154908/192425063-15c319d4-c7b1-4300-b434-f3f80b3401a4.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192425063-15c319d4-c7b1-4300-b434-f3f80b3401a4.png" />
 </details>
 
 
@@ -144,7 +144,7 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , CONCAT(CONCAT(a.AUT
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="280em" src="https://user-images.githubusercontent.com/66154908/192425499-235b63a6-1e52-455c-9abe-6438a0839a49.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192425499-235b63a6-1e52-455c-9abe-6438a0839a49.png" />
 </details>
 
 
@@ -163,7 +163,7 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , Name(a.AUTHOR_NAME.
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="350em" src="https://user-images.githubusercontent.com/66154908/192425565-4f3c6160-4ddf-4afb-8aa4-c1d7a9e7ab4c.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192425565-4f3c6160-4ddf-4afb-8aa4-c1d7a9e7ab4c.png" />
 </details>
 
 <hr><hr>
@@ -214,7 +214,7 @@ select CONCAT(CONCAT(c.Customer_NAME.fname, ' '),c.Customer_NAME.lname) as Custo
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="310em" src="https://user-images.githubusercontent.com/66154908/192425725-c2675e85-e4ec-4fc3-850c-07bf880c1f2d.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192425725-c2675e85-e4ec-4fc3-850c-07bf880c1f2d.png" />
 </details>
 
 3. List customers (as combined from customer.fname and customer.lname) who have purchased books published in the UK or the US, as well as the title of the book they purchased and the name of its publisher and order by last name of customer.
@@ -246,7 +246,7 @@ select DISTINCT b.category as Category_Name, count(b.category) as Book_Count
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="320em" src="https://user-images.githubusercontent.com/66154908/192425915-d6824cc8-d14a-4e6f-8195-aa157f9d2afe.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192425915-d6824cc8-d14a-4e6f-8195-aa157f9d2afe.png" />
 </details>
 
 
@@ -267,6 +267,6 @@ select a.Author_Name.fname as Author_Name, count(a.id)
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="450em" src="https://user-images.githubusercontent.com/66154908/192425955-4d2ab709-1851-4509-822f-3f03c397e66b.png" />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192425955-4d2ab709-1851-4509-822f-3f03c397e66b.png" />
 </details>
 
