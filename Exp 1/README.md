@@ -103,6 +103,13 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname 
     where a.id in (select ext(b.b_author_id) from book b);
 ```
 
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="https://user-images.githubusercontent.com/66154908/192424630-41df77c0-e40a-4d58-9a67-fa528e64cf59.png" />
+</details>
+
 2. List all titles in book and include ISBN number, Author First and last name
 ```
 select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname as First_Name, a.AUTHOR_NAME.lname as Last_Name 
@@ -112,6 +119,16 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID ,a.AUTHOR_NAME.fname 
         FROM TABLE (b_author_id)
     );
 ```
+
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="https://user-images.githubusercontent.com/66154908/192425063-15c319d4-c7b1-4300-b434-f3f80b3401a4.png" />
+</details>
+
+
+
 3. List all titles in book and include ISBN number and Author First & last name **as combined Full_Name**
 ```
 select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , CONCAT(CONCAT(a.AUTHOR_NAME.fname, ' '),a.AUTHOR_NAME.lname) as Full_Name 
@@ -123,6 +140,13 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , CONCAT(CONCAT(a.AUT
 ```
 > Note : CONCAT function can only take 2 Parameters or Arguments, So, for three Parameters or Arguments i.e. Str1 , space, str 2 we used 2 concat 
 
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="" />
+</details>
+
 4. List all titles in book and include ISBN number and Author First & last name as combined Full_Name **Using Name Type**
 ```
 select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , Name(a.AUTHOR_NAME.fname, a.AUTHOR_NAME.lname) as Full_Name 
@@ -133,6 +157,12 @@ select b.title as Title, b.ISBN as ISBN_Number, a.id as ID , Name(a.AUTHOR_NAME.
     );
 ```
 
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="" />
+</details>
 
 <hr><hr>
 
@@ -178,6 +208,13 @@ select CONCAT(CONCAT(c.Customer_NAME.fname, ' '),c.Customer_NAME.lname) as Custo
     where b.book_publisher.PUB_NAME in 'Pearson Education' and BS.BS_customer_id = c.customer_id and BS.BS_ISBN = B.ISBN;
 ```
 
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="" />
+</details>
+
 3. List customers (as combined from customer.fname and customer.lname) who have purchased books published in the UK or the US, as well as the title of the book they purchased and the name of its publisher and order by last name of customer.
 ```
 select CONCAT(CONCAT(c.Customer_NAME.fname, ' '),c.Customer_NAME.lname) as Customer_Name, b.Title as Book_Name, b.book_publisher.PUB_NAME As Publisher
@@ -185,6 +222,13 @@ select CONCAT(CONCAT(c.Customer_NAME.fname, ' '),c.Customer_NAME.lname) as Custo
     where bs.bs_customer_id = c.customer_id and bs.bs_ISBN = b.ISBN and b.book_publisher.branch in ('US','UK')
     order by c.Customer_NAME.lname ;
 ```
+
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="" />
+</details>
 
 4.	List the different (distinct) categories and how many books belong to each category, order alphabetically by category.
 ```
@@ -194,6 +238,13 @@ select DISTINCT b.category as Category_Name, count(b.category) as Book_Count
     ORDER BY b.category
 ;
 ```
+
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="" />
+</details>
 
 5.	List the number of books sold that have been written by each author and group by author’s first name.
 ```
@@ -207,3 +258,10 @@ select a.Author_Name.fname as Author_Name, count(a.id)
     ORDER BY COUNT(a.id) DESC    
 ;
 ```
+
+<details>	
+  <summary><b>Click Here To See Result</b></summary>
+
+  <br />
+  <img height="580em" src="" />
+</details>
