@@ -267,6 +267,6 @@ select a.Author_Name.fname as Author_Name, count(a.id)
   <summary><b>Click Here To See Result</b></summary>
 
   <br />
-  <img height="350em" src="https://user-images.githubusercontent.com/66154908/192425955-4d2ab709-1851-4509-822f-3f03c397e66b.png" />
+  <img height="450em" src="https://user-images.githubusercontent.com/66154908/192425955-4d2ab709-1851-4509-822f-3f03c397e66b.png" />
 </details>
 
