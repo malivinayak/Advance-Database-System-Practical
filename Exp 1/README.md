@@ -55,6 +55,13 @@ insert into author values('A0006', new Name('James', 'Patterson'),'8612324529');
 insert into author values('A0007', new Name('Brendan', 'DuBois'),'5915354685');
 ```
 
+<details>	
+  <summary><b>Click Here To See Author Table</b></summary>
+
+  <br />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192873503-4e9a5cfb-83ee-4495-be6b-cbe50fbeaa8d.png" />
+</details>
+
 ### Quires
 
 1. How to access fname from Author Table of type name?
@@ -84,6 +91,14 @@ insert into book values(1501110365, 'It Ends with Us: A Novel' ,AUTHOR_ID('A0005
 insert into book values(0316499633, 'Blowback: James Pattersons Best Thriller in Years' ,AUTHOR_ID('A0006','A0007'),'Crime, Thriller, Mystery', publisher('P0005','Brown and Company','US'), KEYWORDS('Blowback','mystery','CIA','world war','real story','crime','Thriller'), 2055.83);
 insert into book values(1501192264, 'The Green Mile' ,AUTHOR_ID('A0004','A0007','A0001'),'A Novel', publisher('P0006','Gallery Books','UK'), KEYWORDS('Green Mile','mystery','CIA','world war','horror','crime','Thriller'), 1265.00);
 ```
+
+<details>	
+  <summary><b>Click Here To See Book Table</b></summary>
+
+  <br />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192873100-079df435-38b4-4db9-bf00-b9871c6a3741.png" />
+</details>
+
 
 ### Quires
 
@@ -179,6 +194,12 @@ insert into Customer values('C0013',new Name('Vinayak','Mali'),'8080121357');
 insert into Customer values('C0012',new Name('Aishwarya','Patil'),'8080131275');
 ```
 
+<details>	
+  <summary><b>Click Here To See Customer Table</b></summary>
+
+  <br />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192873525-b1a650ef-6bea-4171-82c0-3effb2e8fa22.png" />
+</details>
 
 
 
@@ -201,6 +222,14 @@ insert into book_sale values('S0011','C0013',1668002175);
 insert into book_sale values('S0012','C0002',1668002175);
 insert into book_sale values('S0013','C0012',1668002175);
 ```
+
+<details>	
+  <summary><b>Click Here To See Book_Sale Table</b></summary>
+
+  <br />
+  <img height="" src="https://user-images.githubusercontent.com/66154908/192873579-5c0ed5f9-f064-4487-9e01-0fb7aa8966a6.png" />
+</details>
+
 ### Queries
 
 2. List All the Customer who have purchased book with 'Pearson Education'
