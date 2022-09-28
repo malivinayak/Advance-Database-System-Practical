@@ -1,4 +1,15 @@
-## Table Creation
+# Index
+  - [Table Creation](#table-creation)
+  - [Data Insertion](#data-insertion)
+    - [Author Table](#1-author-table)
+      - [Queries](#1-quires)
+    - [Book Table](#2-book-table)
+      - [Queries](#2-quires)
+    - [Customer Table](#3-customer-table)
+    - [Book_Sale Table](#4-book-sale)
+      - [Queries](#3-queries)
+
+# Table Creation
 
 1. Type Name :
 ```
@@ -42,9 +53,10 @@ create table Book_Sale( sale_id varchar(10) PRIMARY KEY, BS_customer_id varchar(
 ```
 
 
-## Data Insertion
+# Data Insertion
 
-### 1. Author Table
+## 1. Author Table
+
 ```
 insert into author values('A0001', new Name('Elmasri', 'Ramez'),'7788564985');
 insert into author values('A0002', new Name('Navathe', 'Shamkant'),'8989547866');
@@ -62,7 +74,7 @@ insert into author values('A0007', new Name('Brendan', 'DuBois'),'5915354685');
   <img height="" src="https://user-images.githubusercontent.com/66154908/192873503-4e9a5cfb-83ee-4495-be6b-cbe50fbeaa8d.png" />
 </details>
 
-### Quires
+### 1. Quires
 
 1. How to access fname from Author Table of type name?
 ```
@@ -81,7 +93,7 @@ select author_id as ID, (a.author_name.fname) As First_Name, (a.author_name.lnam
 
 <hr>
 
-### 2. Book Table
+## 2. Book Table
 
 ```
 insert into book values(0133970779, 'Fundamentals of Database Systems' ,AUTHOR_ID('A0001','A0002'),'Education', publisher('P0001','Pearson Education','India'), KEYWORDS('Advance Database','ADS','Pearson','Oracle'), 593.00);
@@ -100,7 +112,7 @@ insert into book values(1501192264, 'The Green Mile' ,AUTHOR_ID('A0004','A0007',
 </details>
 
 
-### Quires
+### 2. Quires
 
 1. List all titles in book and include ISBN number, Author First and last name of first author of book.
 ```
@@ -230,7 +242,7 @@ insert into book_sale values('S0013','C0012',1668002175);
   <img height="" src="https://user-images.githubusercontent.com/66154908/192873579-5c0ed5f9-f064-4487-9e01-0fb7aa8966a6.png" />
 </details>
 
-### Queries
+### 3. Queries
 
 2. List All the Customer who have purchased book with 'Pearson Education'
 ```
